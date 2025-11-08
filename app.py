@@ -30,6 +30,14 @@ st.set_page_config(
     initial_sidebar_state="expanded"  # เปิด Sidebar ตั้งแต่เริ่มต้น
 )
 
+# เพิ่ม meta tags สำหรับ PWA
+st.markdown("""
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="การจัดการข้อมูลผู้ป่วย">
+""", unsafe_allow_html=True)
+
 # ชื่อไฟล์ CSV
 CSV_FILE = "patients_data.csv"
 
