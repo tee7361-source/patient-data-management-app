@@ -206,7 +206,7 @@ elif menu == "➕ เพิ่มผู้ป่วยใหม่":
         col1, col2 = st.columns(2)
         
         with col1:
-            patient_id = st.text_input("รหัสผู้ป่วย *", placeholder="เช่น P001")
+            patient_id = st.text_input("รหัสผู้ป่วย *", placeholder="เช่น P68001")
             name = st.text_input("ชื่อ-นามสกุล *", placeholder="เช่น สมชาย ใจดี")
             age = st.number_input("อายุ *", min_value=0, max_value=150, value=None, placeholder="เช่น 30")
         
